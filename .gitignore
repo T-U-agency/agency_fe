@@ -1,29 +1,3 @@
-# Node.js dependencies
-node_modules
-
-# Environment variables
-.env
-
-# Compiled binary addons
-build/Release
-
-# Log files
-*.log
-
-# Dependency directories
-packages/
-
-# macOS metadata
-.DS_Store
-
-# Windows thumbnail cache files
-Thumbs.db
-
-# Directory contents
-/models/*
-
-.next/
-
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
