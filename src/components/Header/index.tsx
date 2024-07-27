@@ -52,7 +52,7 @@ function Header() {
           >
             <Link
               className="button-black-inline nav-button w-button"
-              href="/help-pages/contact"
+              href="/contact"
               passHref
             >
               Contact us
