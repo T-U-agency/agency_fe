@@ -1,35 +1,19 @@
-"use client";
-
-import Header from "@/components/Header";
+import type { Metadata } from "next";
 import "../styles/index.css";
-import "node_modules/react-modal-video/css/modal-video.css";
+
+export const metadata: Metadata = {
+  title: "TNU Education & Travels",
+  description: "TNU Education & Travels",
+  icons: {
+    icon: "/logos/usg.png",
+  },
+};
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html suppressHydrationWarning lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-
-      <body className="">
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-          {/* 
-          <ScrollToTop /> */}
-        </Providers>
-      </body>
-    </html>
-  );
+  // Validate that the incoming `locale` parameter is valid
+  return <>{children}</>;
 }
-
-import { Providers } from "./providers";
-import Script from "next/script";
-import Footer from "@/components/Footer";
