@@ -50,13 +50,13 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Hero />
+      {/* <Hero />
       <NotableFeatures />
       <DiscoverOurJourney />
       <StepSection />
       <PartnerUniversities />
       <Testimonials />
-      <CTASection />
+      <CTASection /> */}
     </>
   );
 }

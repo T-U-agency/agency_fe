@@ -1,20 +1,18 @@
-import { Providers } from "@/app/providers";
-import Header from "@/components/Header";
 import type { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
-import "../globals.css";
 import locales from "@/utils/locales";
-import Footer from "@/components/Footer";
+import "../globals.css";
+import { Providers } from "@/components/providers";
 
 export const metadata: Metadata = {
   title: "Union Cyp",
   description: "Union Cyp",
 };
 
-export default function RootLayout({
+export default function Layout({
   children,
   params: { locale },
 }: {
@@ -26,20 +24,22 @@ export default function RootLayout({
 
   unstable_setRequestLocale(locale);
   const messages = useMessages();
+  console.log("yo yo");
   return (
     <html lang={locale}>
       {/*
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+      {/* <head /> */}
 
-      <body className="">
+      <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>
-            <Header />
-            {children}
-            <Footer />
+            {/* <Header /> */}
+            hi hi hello
+            {/* {children} */}
+            {/* <Footer /> */}
             {/* 
           <ScrollToTop /> */}
           </Providers>

@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 function Header() {
+  console.log("hi hi");
   return (
     <div
       data-animation="default"
