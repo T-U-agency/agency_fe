@@ -1,8 +1,11 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 function Header() {
+  const translate = useTranslations();
+
   return (
     <div
       data-animation="default"
@@ -22,7 +25,7 @@ function Header() {
             href="/"
             passHref
           >
-            <h4 className="navbar-logo">Home</h4>
+            <h4 className="navbar-logo">{translate("HeaderLinks.home")}</h4>
           </Link>
           <nav
             role="navigation"
@@ -35,7 +38,7 @@ function Header() {
               href="/landing-pages/home-1"
               passHref
             >
-              Home
+              {translate("HeaderLinks.home")}
             </Link>
             <Link
               className="nav-link w-nav-link"
@@ -43,7 +46,7 @@ function Header() {
               style={{ maxWidth: "1520px" }}
               passHref
             >
-              About
+              {translate("HeaderLinks.about")}
             </Link>
           </nav>
           <div
@@ -55,7 +58,7 @@ function Header() {
               href="/contact"
               passHref
             >
-              Contact us
+              {translate("HeaderLinks.contact")}
             </Link>
           </div>
         </div>

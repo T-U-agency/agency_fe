@@ -1,0 +1,10 @@
+{
+    "HomePage": {
+        "title": "Hello world!"
+    },
+    "HeaderLinks": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact us"
+    }
+}
